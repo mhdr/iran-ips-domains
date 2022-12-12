@@ -6,4 +6,10 @@
 
 *دقت کنید Domain Strategy و Outbound Domain Strategy مطابق تصویر تنظیم شده باشد.*
 
-![Nekoray Routes!](https://raw.githubusercontent.com/mhdr/iran-ips-domains/main/images/nekoray-routes.png "Nekoray Routes")
+در صورتی که قصد استفاده از ip ها را دارید تنظیمات را مطابق تصویر زیر انجام دهید
+
+![Nekoray Routes - IP!](https://raw.githubusercontent.com/mhdr/iran-ips-domains/main/images/nekoray01.png "Nekoray Routes - IP")
+
+در صورتی که قصد استفاده از domain ها را دارید تنظیمات را مطابق تصویر زیر انجام دهید
+
+![Nekoray Routes - Domain!](https://raw.githubusercontent.com/mhdr/iran-ips-domains/main/images/nekoray02.png "Nekoray Routes - Domain")
