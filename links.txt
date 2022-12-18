@@ -1,0 +1,10 @@
+https://lite.ip2location.com/iran-(islamic-republic-of)-ip-address-ranges?lang=en_US
+https://www.ip2location.com/free/visitor-blocker
+https://eservices.ito.gov.ir/page/iplist
+https://stat.ripe.net/data/country-resource-list/data.json?resource=IR&v4_format=prefix
+https://github.com/v2fly/geoip
+https://github.com/v2fly/domain-list-community
+https://blog.maxmind.com/2015/09/building-your-own-mmdb-database-for-fun-and-profit/
+https://github.com/VimT/MaxMind-DB-Writer-python
+http://maxmind.github.io/MaxMind-DB/
+https://github.com/Hackl0us/GeoIP2-CN
