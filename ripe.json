@@ -4,7 +4,7 @@
     "version": "0.2",
     "data_call_name": "country-resource-list",
     "data_call_status": "supported - connecting to ursa",
-    "cached": true,
+    "cached": false,
     "data": {
         "query_time": "2022-12-19T00:00:00",
         "resources": {
@@ -2812,11 +2812,11 @@
             ]
         }
     },
-    "query_id": "20221220103820-f5e51fd9-ccc8-4092-bed7-65964aed20ba",
-    "process_time": 5,
-    "server_id": "app145",
+    "query_id": "20221221041641-97f47ce1-2a2a-470b-9c6d-10fc954cbad5",
+    "process_time": 396,
+    "server_id": "app114",
     "build_version": "live.2022.12.15.141",
     "status": "ok",
     "status_code": 200,
-    "time": "2022-12-20T10:38:20.999638"
+    "time": "2022-12-21T04:16:41.463307"
 }
