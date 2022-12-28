@@ -46,3 +46,22 @@ result = lib.v2rayN_ips(lines)
 file_output = open(parent_dir / "{0}/v2rayN_ips.txt".format(output_dir), 'w')
 file_output.write(result)
 file_output.close()
+
+########################################### Proxifier domains ##########################################################
+
+file_input = open("ito.txt", 'r')
+lines = file_input.readlines()
+result = lib.proxifier_domains(lines)
+file_output = open(parent_dir / "{0}/proxifier_domains.txt".format(output_dir), 'w')
+file_output.write(result)
+file_output.close()
+
+########################################### Proxifier ips ##############################################################
+
+
+file_input = open("ripe.txt", 'r')
+lines = file_input.readlines()
+result = lib.proxifier_ips(lines)
+file_output = open(parent_dir / "{0}/proxifier_ips.txt".format(output_dir), 'w')
+file_output.write(result)
+file_output.close()
