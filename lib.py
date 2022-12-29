@@ -79,6 +79,7 @@ def v2rayN_ips(data: list):
 
 
 def proxifier_domains(data: list):
+    output_list = []
     output = ""
     data_set = set()
 
@@ -99,20 +100,35 @@ def proxifier_domains(data: list):
 
     sorted_data = sorted(data_set)
     for d in sorted_data:
-        output += "*.{0};".format(d)
+        new = "*.{0};".format(d)
+        if len(output) + len(new) >= 32768:
+            output_list.append(output)
+            output = ""
 
-    return output
+        output += new
+
+    if len(output) > 0:
+        output_list.append(output)
+
+    return output_list
 
 
 def proxifier_ips(data: list):
+    output_list = []
     output = ""
     sorted_data = sorted(data)
     for d in sorted_data:
         dd = d.strip()
-        partitioned = dd.partition("/")
-        if len(partitioned) == 3:
-            ip = partitioned[0]
-            if type(ipaddress.ip_address(ip)) is ipaddress.IPv4Address:
-                output += "{0};".format(dd)
+        net = ipaddress.ip_network(dd)
+        ip_range = "{0}-{1}".format(net[0], net[-1])
+        new = "{0};".format(ip_range)
+        if len(output) + len(new) >= 32768:
+            output_list.append(output)
+            output = ""
 
-    return output
+        output += new
+
+    if len(output) > 0:
+        output_list.append(output)
+
+    return output_list

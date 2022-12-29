@@ -8,6 +8,9 @@ parent_dir = Path(__file__).parent
 
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
+else:
+    for f in os.listdir(output_dir):
+        os.remove(os.path.join(output_dir, f))
 
 ########################################### nekoray domains ############################################################
 
@@ -52,9 +55,12 @@ file_output.close()
 file_input = open("ito.txt", 'r')
 lines = file_input.readlines()
 result = lib.proxifier_domains(lines)
-file_output = open(parent_dir / "{0}/proxifier_domains.txt".format(output_dir), 'w')
-file_output.write(result)
-file_output.close()
+file_index = 1
+for r in result:
+    file_output = open(parent_dir / "{0}/proxifier_domains{1}.txt".format(output_dir, file_index), 'w')
+    file_output.write(r)
+    file_output.close()
+    file_index += 1
 
 ########################################### Proxifier ips ##############################################################
 
@@ -62,6 +68,9 @@ file_output.close()
 file_input = open("ripe.txt", 'r')
 lines = file_input.readlines()
 result = lib.proxifier_ips(lines)
-file_output = open(parent_dir / "{0}/proxifier_ips.txt".format(output_dir), 'w')
-file_output.write(result)
-file_output.close()
+file_index = 1
+for r in result:
+    file_output = open(parent_dir / "{0}/proxifier_ips_part{1}.txt".format(output_dir, file_index), 'w')
+    file_output.write(r)
+    file_output.close()
+    file_index += 1
