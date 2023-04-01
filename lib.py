@@ -67,10 +67,11 @@ def v2rayN_domains(data: list):
     return output
 
 
-def v2rayN_ips(data: list):
+def v2rayN_ips(data: list, data2: list):
     output = ""
+    data_all = data + data2
 
-    sorted_data = sorted(list(set(data)))
+    sorted_data = sorted(list(set(data_all)))
     for d in sorted_data:
         dd = d.strip()
         output += "{0},\n".format(dd)

@@ -45,9 +45,9 @@ file_output.close()
 
 file_input = open("ripe.txt", 'r')
 lines = file_input.readlines()
-
-result = lib.v2rayN_ips(lines)
-
+file_input2 = open("ito-ip.txt", 'r')
+lines2 = file_input2.readlines()
+result = lib.v2rayN_ips(lines, lines2)
 file_output = open(parent_dir / "{0}/v2rayN_ips.txt".format(output_dir), 'w')
 file_output.write(result)
 file_output.close()
