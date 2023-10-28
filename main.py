@@ -74,3 +74,16 @@ for r in result:
     file_output.write(r)
     file_output.close()
     file_index += 1
+
+
+########################################### Arvan ips ##############################################################
+
+file_input = open("arvan.txt", 'r')
+lines = file_input.readlines()
+result = lib.proxifier_ips(lines)
+file_index = 1
+for r in result:
+    file_output = open(parent_dir / "{0}/proxifier_arvan_ips_part{1}.txt".format(output_dir, file_index), 'w')
+    file_output.write(r)
+    file_output.close()
+    file_index += 1

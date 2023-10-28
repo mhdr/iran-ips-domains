@@ -132,3 +132,23 @@ def proxifier_ips(data: list):
         output_list.append(output)
 
     return output_list
+
+def proxifier_arvan_ips(data: list):
+    output_list = []
+    output = ""
+    sorted_data = sorted(data)
+    for d in sorted_data:
+        dd = d.strip()
+        net = ipaddress.ip_network(dd)
+        ip_range = "{0}-{1}".format(net[0], net[-1])
+        new = "{0};".format(ip_range)
+        if len(output) + len(new) >= 32768:
+            output_list.append(output)
+            output = ""
+
+        output += new
+
+    if len(output) > 0:
+        output_list.append(output)
+
+    return output_list
