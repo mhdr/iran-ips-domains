@@ -87,3 +87,14 @@ for r in result:
     file_output.write(r)
     file_output.close()
     file_index += 1
+
+
+########################################### singbox ips #################################################################
+
+
+file_input = open("ripe.txt", 'r')
+lines = file_input.readlines()
+result = lib.singbox_ips(lines)
+file_output = open(parent_dir / "{0}/singbox_ips.txt".format(output_dir), 'w')
+file_output.write(result)
+file_output.close()

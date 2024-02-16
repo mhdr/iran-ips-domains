@@ -77,6 +77,15 @@ def v2rayN_ips(data: list):
     output = output.rstrip(",\n")
     return output
 
+def singbox_ips(data: list):
+    output = ""
+    sorted_data = sorted(list(set(data)))
+    for d in sorted_data:
+        dd = d.strip()
+        output += "\"{0}\",\n".format(dd)
+
+    output = output.rstrip(",\n")
+    return output
 
 def proxifier_domains(data: list):
     output_list = []
