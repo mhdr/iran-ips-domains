@@ -4,9 +4,9 @@
     "version": "0.2",
     "data_call_name": "country-resource-list",
     "data_call_status": "supported",
-    "cached": true,
+    "cached": false,
     "data": {
-        "query_time": "2024-02-17T00:00:00",
+        "query_time": "2024-02-19T00:00:00",
         "resources": {
             "asn": [
                 "1756",
@@ -2889,6 +2889,7 @@
                 "2a0e:4a40::/29",
                 "2a0e:6480::/29",
                 "2a0e:6780::/29",
+                "2a0e:6e40::/29",
                 "2a0e:6f40::/29",
                 "2a0e:8300::/29",
                 "2a0e:8340::/29",
@@ -3011,9 +3012,6 @@
                 "2a13:f1c0::/29",
                 "2a13:f340::/29",
                 "2a13:f480::/29",
-                "2a14:c0::/29",
-                "2a14:140::/29",
-                "2a14:1c0::/29",
                 "2a14:580::/29",
                 "2a14:600::/29",
                 "2a14:800::/29",
@@ -3034,11 +3032,11 @@
             ]
         }
     },
-    "query_id": "20240219052722-58e55219-3baf-4569-beff-a8637b437afa",
-    "process_time": 5,
-    "server_id": "app146",
+    "query_id": "20240220103439-3bfb5c82-6e8e-486c-8a6a-b26d4cfc8515",
+    "process_time": 322,
+    "server_id": "app116",
     "build_version": "live.2024.2.7.194",
     "status": "ok",
     "status_code": 200,
-    "time": "2024-02-19T05:27:22.886030"
+    "time": "2024-02-20T10:34:40.238640"
 }
