@@ -4,9 +4,9 @@
     "version": "0.2",
     "data_call_name": "country-resource-list",
     "data_call_status": "supported",
-    "cached": false,
+    "cached": true,
     "data": {
-        "query_time": "2024-02-26T00:00:00",
+        "query_time": "2024-02-28T00:00:00",
         "resources": {
             "asn": [
                 "1756",
@@ -2968,7 +2968,6 @@
                 "2a12:b480::/29",
                 "2a12:ccc0::/29",
                 "2a12:d9c0::/29",
-                "2a12:f0c0::/29",
                 "2a12:fa00::/29",
                 "2a12:fec0::/29",
                 "2a13:8c0::/29",
@@ -3032,11 +3031,11 @@
             ]
         }
     },
-    "query_id": "20240227110915-a466df75-3247-4684-b9e5-3f1a4bc15ee6",
-    "process_time": 362,
-    "server_id": "app134",
+    "query_id": "20240229102312-bbe6e539-4ff9-4288-82e0-804ec08671b8",
+    "process_time": 5,
+    "server_id": "app124",
     "build_version": "live.2024.2.7.194",
     "status": "ok",
     "status_code": 200,
-    "time": "2024-02-27T11:09:15.788308"
+    "time": "2024-02-29T10:23:12.301442"
 }
