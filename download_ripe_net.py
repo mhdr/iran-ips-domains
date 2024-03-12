@@ -8,7 +8,7 @@ PARAMS = {'resource': "IR", "v4_format": "prefix"}
 r = requests.get(url=URL, params=PARAMS)
 data = r.json()
 
-file_json=open("ripe.json","w")
+file_json = open("ripe.json", "w")
 file_json.write(r.text)
 file_json.close()
 
@@ -20,7 +20,7 @@ for d in ipv4_list:
     print(d)
 
 for d in ipv6_list:
-    ips.add(d+ "\n")
+    ips.add(d + "\n")
     print(d)
 
 file_output = open('ripe.txt', 'w')
